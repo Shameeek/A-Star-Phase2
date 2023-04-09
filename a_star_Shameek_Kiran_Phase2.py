@@ -225,7 +225,6 @@ if __name__ == '__main__':
                 visited_nodes[int(x)][int(y)][int(theta)] = 1
                 for rpm1, rpm2 in [(0, RPM1), (RPM1, 0), (RPM1, RPM1), (0, RPM2), (RPM2, 0), (RPM2, RPM2), (RPM1, RPM2), (RPM2, RPM1)]:
                     action(rpm1, rpm2, x, y, theta)
-
         if not len(explored_nodes):
             print('Path not found!')
             print('List of Nodes Explored:', list(explored_nodes.keys()))
